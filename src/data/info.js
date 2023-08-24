@@ -11,7 +11,7 @@ export const detalleCard = [
   },
   {
     icono: "fa-globe",
-    texto1: "+ de 600 000",
+    texto1: "+ de 700 000",
     texto2: "clilentes alrededor del mundo",
   },
 ];
