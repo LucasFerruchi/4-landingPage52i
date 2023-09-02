@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { obtenerClima } from "../helpers/obtener-clima";
 import "../css/navbar.css";
 
-const NavBar = () => {
+const NavBar = ({ modoOscuro, cambiarModoOscuro }) => {
   //Estado para manejar el clima
   const [tiempo, setTiempo] = useState(null);
 
@@ -33,7 +33,11 @@ const NavBar = () => {
   return (
     <>
       <div className="fixed-top">
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav
+          className={`navbar navbar-expand-lg ${
+            modoOscuro ? "bg-dark navbar-dark" : "bg-light"
+          }`}
+        >
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
               <i className="fa fa-ravelry" aria-hidden="true"></i>
@@ -74,9 +78,30 @@ const NavBar = () => {
                     alt="clima"
                     className="icon-tiempo"
                   />
-                  <span>{Math.round(tiempo.temp)}°C</span>
+                  <span className={modoOscuro ? "text-white" : ""}>
+                    {Math.round(tiempo.temp)}°C
+                  </span>
                 </div>
               )}
+              <div className="d-flex justify-content-center align-items-center gap-2">
+                {modoOscuro ? (
+                  <i className="fa fa-moon-o text-white" aria-hidden="true"></i>
+                ) : (
+                  <i className="fa fa-sun-o" aria-hidden="true"></i>
+                )}
+
+                <div>
+                  <div className="form-check form-switch">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                      onChange={cambiarModoOscuro}
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </nav>

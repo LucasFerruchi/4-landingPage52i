@@ -1,10 +1,10 @@
 import React from "react";
 
-const CardApp = ({ item }) => {
+const CardApp = ({ item, modoOscuro }) => {
   return (
     <>
       <div className="col-12 col-md my-3">
-        <div className="card h-100 ">
+        <div className={`card h-100 ${modoOscuro}`}>
           <div className="card-body d-flex flex-column align-items-center">
             <i
               className={`fa ${item.icono} fa-3x text-primary`}
