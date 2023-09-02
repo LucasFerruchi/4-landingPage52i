@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 //Importar el arreglo
 import { detalleCard } from "./data/info.js";
 import NavBar from "./components/NavBar";

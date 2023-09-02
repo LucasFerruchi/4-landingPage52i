@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 //importar funcion
 import { obtenerClima } from "../helpers/obtener-clima";
+import "../css/navbar.css";
 
 const NavBar = () => {
   //Estado para manejar el clima
@@ -35,7 +36,8 @@ const NavBar = () => {
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
-              Navbar
+              <i className="fa fa-ravelry" aria-hidden="true"></i>
+              52Robots
             </a>
             <button
               className="navbar-toggler"
@@ -70,8 +72,9 @@ const NavBar = () => {
                   <img
                     src={`http://openweathermap.org/img/wn/${tiempo.clima.icon}@2x.png`}
                     alt="clima"
+                    className="icon-tiempo"
                   />
-                  <span>{tiempo.temp}°C</span>
+                  <span>{Math.round(tiempo.temp)}°C</span>
                 </div>
               )}
             </div>
