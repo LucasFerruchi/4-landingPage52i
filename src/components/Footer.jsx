@@ -10,11 +10,11 @@ const Footer = () => {
                 <i className="fa fa-ravelry" aria-hidden="true"></i>
             </div>
             <div className="box">
-                <li>
-                    <ul><a href="">CONTACTO COMERCIAL</a></ul>
-                    <ul><a href="">ACERCA DE NOSOTROS</a></ul>
-                    <ul><a href="">TÉRMINOS Y CONDICIONES</a></ul>
-                </li>
+                <ul>
+                    <li><a href="">CONTACTO COMERCIAL</a></li>
+                    <li><a href="">ACERCA DE NOSOTROS</a></li>
+                    <li><a href="">TÉRMINOS Y CONDICIONES</a></li>
+                </ul>
             </div>
             <div className="box">
                 <div className="red-social">

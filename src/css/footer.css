@@ -8,7 +8,6 @@
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
-    list-style: none;
 }
 .container-footer .grupo-1 i{
     font-size: 100px;
@@ -18,6 +17,9 @@
     color: rgb(252, 252, 252);
     text-decoration: none;
     font-size: 15px;
+}
+ul{
+    list-style: none;
 }
 .container-footer .grupo-1 .red-social a{
     border-radius: 50%;
