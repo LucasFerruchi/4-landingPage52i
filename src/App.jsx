@@ -5,6 +5,7 @@ import { detalleCard } from "./data/info.js";
 import NavBar from "./components/NavBar";
 import CarouselApp from "./components/CarouselApp";
 import CardApp from "./components/CardApp";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   //Estado modoOscuro
@@ -27,9 +28,11 @@ function App() {
             ))}
           </div>
         </div>
+        <Footer/>
       </div>
     </>
   );
 }
 
 export default App;
+
