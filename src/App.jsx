@@ -13,14 +13,15 @@ function App() {
   return (
     <>
       <BrowserRouter>
+
       <Routes>
         <Route path="contacto" element={<ContactoScreen/>} />
         <Route path="/" element={<InicioScreem/>} />
         <Route path="*" element={<ErrorScreen/>} />
-
       </Routes>
       
       </BrowserRouter>
+
       <NavBar />
       <CarouselApp />
       <div className="container">
