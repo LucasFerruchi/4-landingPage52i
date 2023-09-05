@@ -19,8 +19,9 @@ function App() {
         <Route path="/" element={<InicioScreem/>} />
         <Route path="*" element={<ErrorScreen/>} />
       </Routes>
-      
+
       </BrowserRouter>
+      
 
       <NavBar />
       <CarouselApp />
