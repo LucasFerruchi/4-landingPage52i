@@ -13,7 +13,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
-
+      <NavBar />
+      
       <Routes>
         <Route path="contacto" element={<ContactoScreen/>} />
         <Route path="/" element={<InicioScreem/>} />
@@ -21,9 +22,8 @@ function App() {
       </Routes>
 
       </BrowserRouter>
-      
 
-      <NavBar />
+
       <CarouselApp />
       <div className="container">
         <div className="row">

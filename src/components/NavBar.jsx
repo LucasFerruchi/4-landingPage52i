@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 //importar funcion
 import { obtenerClima } from "../helpers/obtener-clima";
 import "../css/navbar.css";
+import {Link, NavLink} from "react-router-dom"
 
 const NavBar = () => {
   //Estado para manejar el clima
@@ -35,10 +36,10 @@ const NavBar = () => {
       <div className="fixed-top">
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <Link className="navbar-brand" href="/">
               <i className="fa fa-ravelry" aria-hidden="true"></i>
               52Robots
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -56,14 +57,17 @@ const NavBar = () => {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <NavLink className= "nav-link" to="/">Inicio</NavLink>
+                  <NavLink className= "nav-link" to="/contacto">Contacto</NavLink>
+
+                  {/* <a className="nav-link active" aria-current="page" href="#">
                     Inicio
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
                     Contactos
-                  </a>
+                  </a> */}
                 </li>
               </ul>
               {/* DATOS DEL CLIMA */}
