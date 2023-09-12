@@ -36,7 +36,7 @@ const NavBar = () => {
       <div className="fixed-top">
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <Link className="navbar-brand" href="/">
+            <Link className="navbar-brand" to="/">
               <i className="fa fa-ravelry" aria-hidden="true"></i>
               52Robots
             </Link>
